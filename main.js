@@ -1,4 +1,4 @@
-const TypeWriter = function(txtElement, words, wait = 500) 
+const TypeWriter = function(txtElement, words, wait = 350) 
 {
  this.txtElement = txtElement;
  this.words = words;
@@ -46,7 +46,7 @@ TypeWriter.prototype.type = function() {
    // Move to next word
    this.wordIndex++;
    // Pause before start typing
-   typeSpeed = 300;
+   typeSpeed = 200;
 }
 
  setTimeout(() => this.type(), typeSpeed);
